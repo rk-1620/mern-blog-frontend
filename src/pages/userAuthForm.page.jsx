@@ -7,7 +7,6 @@ import {Toaster, toast} from 'react-hot-toast'
 import axios from 'axios'
 import { storeInSession } from "../common/session";
 import { useContext } from "react";
-import User from "../../../server/Schema/User";
 import { UserContext } from "../App";
 import {authWithGoogle} from "../common/firebase";
 
