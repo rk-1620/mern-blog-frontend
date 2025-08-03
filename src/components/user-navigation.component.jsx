@@ -10,9 +10,13 @@ const UserNavigationPanel = () => {
 
   const signOutUser = () => {
     removeFromSession("user");
-    setUserAuth({ access_token: null });
-    navigate("/signin"); // ✅ redirect after logout
-  };
+    setUserAuth({
+      access_token: null,
+      username: null,
+      profile_img: null,
+    });
+    navigate("/signin"); 
+};
 
   return (
     <Animationwrapper className="absolute right-0 z-50" transition={{ duration: 0.2 }}>
