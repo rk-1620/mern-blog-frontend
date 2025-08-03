@@ -14,6 +14,7 @@ import { pingBackend } from "./utils/pingbackend";
 
 export const UserContext = createContext({})
 
+
 const App = () => {
 
     const [userAuth, setUserAuth] = useState({ });
