@@ -11,7 +11,7 @@ const UserNavigationPanel = () => {
   const signOutUser = () => {
     removeFromSession("user");
     setUserAuth({ access_token: null });
-    navigate("/login"); // ✅ redirect after logout
+    navigate("/signin"); // ✅ redirect after logout
   };
 
   return (
